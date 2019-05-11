@@ -1,0 +1,512 @@
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../../img/bg9.png') center fixed no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-attachment:fixed;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #000;
+	font-size:11pt;
+}
+
+hr {
+	margin-top: 5px;
+	*max-width:580px;
+    border-color: #990012;
+	border:1px solid #990012;
+	margin-bottom: 2px;
+}
+
+button a{
+	text-decoration:none;
+	color:#fff;
+}
+
+button a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+header{
+	font-size:50pt;
+	font-family:"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#000;	
+}
+
+nav {
+	*font-family:"Berlin Sans FB";
+	text-transform:uppercase;
+	border-top:3px solid #fff;
+	border-bottom:3px solid #fff;
+	width:100%;
+	background: rgba(245, 158, 158, 0.99);
+}
+
+nav hr {
+	border-color:#fff;
+	max-width:640px;
+}
+
+nav ul {
+	text-align:center;
+	font-size:13pt;
+	color:#fff;
+}
+
+nav ul li {
+	*text-shadow: 0 0 4px #FFEBCD;
+	display:inline-block;
+	padding:0px 5px 0px 5px;
+}
+
+nav a {
+	color:#fff;
+	text-shadow: 0 0 4px #FFEBCD;
+}
+
+nav a:hover {
+	color:#000;
+	text-decoration:none;
+}
+
+nav .navbar-right {
+	font-size:11pt;
+}
+
+.slide {
+	border:2px solid #fff;
+	width:650px;
+}
+
+.col-sm-5 .panel-heading{
+	background-color:#990012;
+}
+
+.col-sm-5 .panel-heading a {
+	color:#990012;
+	text-decoration:none;
+}
+
+.judul {
+	padding-bottom:10px;
+	text-transform: uppercase;
+    *font-family: Georgia, serif;
+	letter-spacing: 1px;
+}
+
+.col-sm-5 .col-sm-12 .panel-body a{
+	color:#990012;
+}
+
+.content {
+	background-color:#fff;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	*background: rgba(255,255,255,0.9);
+}
+
+.content a {
+	color:#990012;
+	text-decoration:none;
+}
+
+.content a:hover {
+	color:#f3b4b4;
+}
+
+.content table tr td a {
+	text-decoration:none;
+	color:#990012;
+}
+
+.content table tr td a :hover{
+	color:#f3b4b4;
+}
+
+.content p a {
+	text-decoration:none;
+	color:#990012;
+}
+
+.content table tr td img {
+	text-align:center;
+	width:210px;
+	height:150px;
+	border:2px solid #000000;
+}
+
+.content ul {
+	text-align:center;
+	padding:10px;
+}
+
+.content ul li {
+	display:inline-block;
+	padding:10px 30px 10px 30px;
+}
+
+.content ul li img {
+	width:260px;
+	height:220px;
+}
+
+.content ul li a {
+	color:#990012;
+}
+
+.content ul li a:hover{
+	color:#f3b4b4;
+	text-decoration:none;
+}
+
+.content .h_cari {
+	margin:0 200px 0 200px;
+}
+
+.content .h_kategori ul li a {
+	color:#000;
+}
+
+.content .h_kategori ul li a:hover{
+	color:#f3b4b4;
+	text-decoration:none;
+}
+
+.content .kategori ul li img {
+	width:220px;
+	height:180px;
+}
+
+.content .kategori table tr td img {
+	width:220px;
+	height:200px;
+	border:2px solid #000000;
+}
+
+.content .kategori table tr td {
+	text-align:center;
+	font-size:12px;
+}
+
+.content .kategori a {
+	color:#990012;
+	text-decoration:none;
+}
+
+.content .kategori a:hover {
+	color:#f3b4b4;
+}
+
+.content .topic a {
+	color:#990012;
+	text-decoration:none;
+}
+
+.content .topic a:hover {
+	color:#f3b4b4;
+}
+
+.content .topic ul li {
+	display:block;
+}
+
+.content .sign {
+	margin:0 300px 50px 300px;
+}
+
+.content .masakan {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:12pt;
+	width:1000px;
+	margin:0 50px 0 50px;
+}
+
+.content .masakan a {
+	color:#990012;
+	text-decoration:none;
+}
+
+.content .masakan a:hover {
+	color:#f3b4b4;
+}
+
+.content .masakan p {
+	font-size:12pt;
+}
+
+.content .masakan .info p{
+	font-size:14pt;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:italic;
+}
+
+.content .masakan img {
+	width:500px;
+	height:400px;
+	border:5px solid rgba(168, 0, 0, 0.87);
+}
+
+.content .masakan table tr td {
+	padding:0 10px 5px 10px;
+}
+
+.content .masakan ul li{
+	display:block;
+	text-align:justify;
+}
+
+.content .masakan h3 {
+	color:#990012;
+}
+
+.content .masakan ol li {
+	margin-bottom:5px;
+	text-align:justify;
+	color:#000;
+}
+
+.content .masakan .terkait td {
+	font-size:9pt;
+}
+
+.content .masakan .terkait p {
+	font-size:10pt;
+}
+
+.content .masakan .terkait img {
+	width:200px;
+	height:180px;
+	border:3px solid rgba(168, 0, 0, 0.87);
+}
+
+.content .tambah {
+	margin:0 150px 0px 150px;
+}
+
+.content .forum table {
+	border:2px solid #fff;
+}
+
+.content .forum table thead tr th {
+	background-color:#990012;
+	color:#fff;
+	text-align:center;
+	font-size:14pt;
+}
+
+.content .create_topic button {
+	margin-left:5px;
+}
+
+.content .create_topic p a {
+	color:#990012;
+}
+
+.content .create_topic p a:hover {
+	color:#f3b4b4;
+}
+
+.content .profil {
+	font-size:13pt;
+	font-family:Georgia, serif;
+}
+
+.content .profil table a {
+	font-size:12pt;
+	letter-spacing:0px;
+}
+
+.content .profil img {
+	margin:10px 10px 0px 12px;
+	width:250px;
+	height:250px;
+	border:2px solid #000;
+}
+
+.content .profil p {
+	font-size:12pt;
+	margin-top:10px;
+}
+
+.content .profil a {
+	font-size:15pt;
+	margin-top:20px;
+	letter-spacing:1px;
+	color:#990012;
+	text-decoration:none;
+}
+
+.content .profil a:hover {
+	color:#f3b4b4;
+}
+
+.content .profil p a {
+	font-size:12pt;
+	margin-top:20px;
+	letter-spacing:1px;
+	color:#990012;
+	text-decoration:none;
+}
+
+.content .profil h3 {
+	font-size:22pt;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:3px;
+	color:#990012;
+	padding-bottom:10px;
+}
+
+.content .profil table {
+	margin:0 0 10px 0;
+}	
+
+.content .profil .resep_x table {
+	margin:0px;
+}
+
+.content .profil .resep_x table tr td {
+	font-size:8pt;
+}
+
+.content .profil .resep_x  img {
+	width:200px;
+	height:180px;
+}
+
+.content .profil .resep_x  p{
+	margin:0 10px;
+	font-size:10pt;
+}
+
+.content .profil .resep_x  h3{
+	font-size:20pt;
+	text-transform:uppercase;
+    font-family:"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing:2px;
+	color:#000;
+}
+
+.content .profil .resep_x a {
+	color:#990012;
+	text-decoration:none;
+	font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:10pt;
+	letter-spacing:0px;
+}
+
+.content .ubah_profil {
+	margin:0 300px 50px 300px;
+}
+
+.cari {
+	margin:0 50px 0 50px;
+}
+
+.page {
+	font-size:14pt;
+}
+
+.komentar {
+	margin:130px;
+}
+
+.komentar hr{
+	max-width:1000px;
+}
+
+.komentar .balasan {
+	margin-left:40px;
+}
+
+.kriteria form label {
+	width:150px;
+	color:#990012;
+}
+
+.kriteria input {
+	margin-left:15px;
+}
+
+.kriteria ul li {
+	display:block;
+	padding: 0 0 0 0;
+	text-align:left;
+}
+
+.tentang {
+	margin:0 50px 0 50px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.footer {
+	background-color:#0C090A;
+	padding:20px;
+	margin-top:10px;
+}

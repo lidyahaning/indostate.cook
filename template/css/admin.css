@@ -1,0 +1,78 @@
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #fff; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-attachment:fixed;
+}
+
+th {
+	text-align:center;
+}
+
+nav {
+	height:80px;
+	background:#000;
+}
+
+nav a {
+	font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-decoration:none;
+	color:#fff;
+}
+
+nav a:hover {
+	text-decoration:none;
+}
+
+.beranda {
+	margin-top:80px;
+	position:center;
+}
+
+.beranda button {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+	font-size:20pt;
+}
+
+.beranda button a {
+	text-decoration:none;
+	color:#000;
+}
+
+.beranda button a:hover {
+	text-decoration:none;
+}
+
+.kelola a {
+	text-decoration:none;
+	color:#000;
+}
+
+.kelola a:hover {
+	text-decoration:none;
+	color:blue;
+}
+
+.page {
+	font-size:14pt;
+}
+
+.edit button a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.edit button a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+.login {
+	width:600px;
+	margin: 30px 0 0 250px;
+}

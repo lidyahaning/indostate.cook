@@ -1,0 +1,7 @@
+login admin
+username : lidya
+password : 123
+
+login anggota
+username : lidyahaning
+password : 1234
